@@ -108,6 +108,56 @@
             color: #ccc; 
         }
     </style>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://coachdefoto.com/viajes/#service",
+      "name": "Viajes de Inmersión Fotográfica",
+      "provider": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Procesos de inmersión en ciudades como La Habana y Medellín para entender el contexto y desarrollar una narrativa visual profunda.",
+      "areaServed": [
+        { "@type": "City", "name": "La Habana", "sameAs": "https://www.wikidata.org/wiki/Q1563" },
+        { "@type": "City", "name": "Medellín", "sameAs": "https://www.wikidata.org/wiki/Q48278" },
+        { "@type": "City", "name": "Bogotá" },
+        { "@type": "City", "name": "Cartagena" }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "description": "Viajes en grupos reducidos con enfoque en la mirada consciente."
+      },
+      "mentions": [
+        { "@type": "WebPage", "name": "Cómo aprender a ver", "url": "https://coachdefoto.com/como-aprender-a-ver/" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://coachdefoto.com/viajes/#article",
+      "headline": "Viajar para entender: La fotografía como proceso de inmersión",
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "mainEntityOfPage": "https://coachdefoto.com/viajes/",
+      "about": [
+        { "@type": "Thing", "name": "Narrativa Visual" },
+        { "@type": "Thing", "name": "Inmersión Cultural" }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
 </head>
 
 <body>
