@@ -111,29 +111,33 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com",
-          "sameAs": [
-            "https://www.linkedin.com/in/sergiolubezky/",
-            "https://inteligencia.com",
-            "https://unnuevopuntodevista.com",
-            "https://liderazgointerino.com",
-            "https://elmismobarco.com",
-            "https://coachdefoto.com"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "name": "Coach de Foto",
-          "url": "https://coachdefoto.com"
-        }
-      ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/sergiolubezky/",
+        "https://inteligencia.com/",
+        "https://unnuevopuntodevista.com/",
+        "https://liderazgointerino.com/",
+        "https://elmismobarco.com/",
+        "https://coachdefoto.com/"
+      ],
+      "knowsAbout": ["Photography", "Visual Narrative", "Strategic Observation"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://coachdefoto.com/#website",
+      "name": "Coach de Foto",
+      "url": "https://coachdefoto.com/",
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Entrenamiento de la mirada y narrativa visual para trascender la técnica fotográfica."
     }
+  ]
+}
     </script>
 
 </head>
